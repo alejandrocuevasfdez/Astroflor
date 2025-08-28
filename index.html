@@ -3,264 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astroflor</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fafb;
-    }
-
-    header {
-      position: relative;
-      padding: 10px 20px;
-      background: linear-gradient(90deg, #fbff009a, #73a1e67a, #f53b3b7a);
-      color: white;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo img { height: 130px; object-fit: contain; }
-
-    .contact-info {
-      position: absolute;
-      top: 50%;
-      right: 70px;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 5px;
-      font-size: 20px;
-    }
-    .contact-info span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .contact-info span svg { width: 20px; height: 20px; fill: white; }
-
-    nav { width: 100%; margin-top: 10px; }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      justify-content: center;
-    }
-    nav li:not(:last-child)::after {
-      content: "";
-      display: inline-block;
-      width: 4px;
-      height: 24px;
-      margin-left: 15px;
-      background-color: white;
-      border-left: 2px solid #000;
-      box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-      vertical-align: middle;
-    }
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 6px 10px;
-      border-radius: 4px;
-      transition: background 0.3s, transform 0.1s;
-    }
-    nav a:hover { background: rgba(255, 255, 255, 0.15); }
-    nav a:active { transform: scale(0.95); }
-
-    .banner-image { position: relative; width: 100%; max-height: 800px; overflow: hidden; text-align: center; }
-    .banner-image img { width: 100%; height: 80%; object-fit: cover; display: block; }
-    .banner-text {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 48px;
-      font-weight: bold;
-      text-align: center;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    }
-    .banner-button {
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #f1ff70b9;
-      color: rgb(0, 0, 0);
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-      transition: background 0.3s, transform 0.1s;
-    }
-    .banner-button:hover { background-color: #09caecb7; }
-    .banner-button:active { transform: translate(-50%, -50%) scale(0.95); }
-
-    .separator-banner {
-      background: linear-gradient(90deg, #f53b3b7a, #73a1e67a, #fbff009a);
-      text-align: center;
-      padding: 40px 20px;
-      color: white;
-      font-size: 32px;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    }
-
-    .content-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 10%;
-      gap: 30px;
-    }
-    .content-section img {
-      width: 40%;
-      border-radius: 12px;
-      box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    }
-    .content-text { width: 50%; font-size: 20px; line-height: 1.6; color: #333; }
-
-    .content-video { width: 50%; }
-    .content-video video { width: 100%; border-radius: 12px; box-shadow: 2px 2px 12px rgba(0,0,0,0.2); }
-
-    @media (max-width: 768px) {
-      .contact-info { position: static; transform: none; align-items: center; margin-top: 10px; }
-      .logo img { height: 80px; }
-      nav ul { flex-direction: column; gap: 18px; }
-      nav li:not(:last-child)::after { display: none; }
-      .banner-text { font-size: 28px; }
-      .content-section { flex-direction: column; text-align: center; }
-      .content-section img { width: 80%; margin-left: 0; }
-      .content-text { width: 100%; }
-      .content-video { width: 80%; margin-top: 20px; }
-    }
-  </style>
+  <title>Astroflor - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-  <div class="logo">
-    <img src="C:\Users\alvar\Downloads\LOGO.png" alt="Astroflor Logo">
-  </div>
-  <div class="contact-info">
-    <span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5a1 1 0 011-1H6.5a1 1 0 011 1c0 1.35.26 2.67.76 3.88.1.22.03.48-.21 1.11l-2.2 2.2z"/>
-      </svg> +34 913 864 681
-    </span>
-    <span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-      </svg> astroflor@astroflor.com
-    </span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#nosotros">Sobre Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="banner-image">
-  <img src="C:\Users\alvar\Downloads\tulips-3389122_1280.jpg" alt="Banner">
-  <div class="banner-text">Esto es un ejemplo</div>
-  <button class="banner-button">VISITA NUESTRA TIENDA ONLINE</button>
-</div>
-
-<div class="separator-banner">🌸 Bienvenido a Astroflor 🌸</div>
-
-<div class="content-section">
-  <img src="C:\Users\alvar\Downloads\WhatsApp Image 2025-08-26 at 18.02.05.jpeg" alt="Flores Astroflor">
-  <div class="content-text">
-    <h2>Nuestra pasión por las flores</h2>
-    <p>En <strong>Astroflor</strong> seleccionamos la mejor flor cortada para floristerías y eventos. Nuestro compromiso es ofrecer siempre frescura, calidad y un reparto propio que garantiza que cada pedido llegue perfecto a su destino.</p>
-  </div>
-</div>
-
-<div class="content-section">
-  <div class="content-text">
-    <h2>Descubre nuestro trabajo</h2>
-    <p>Queremos que conozcas de cerca cómo cuidamos cada detalle en el proceso de selección y reparto de flores. Mira este video para descubrir más sobre nuestro día a día en <strong>Astroflor</strong>.</p>
-  </div>
-  <div class="content-video">
-    <video width="100%" controls>
-      <source src="C:\Users\alvar\Downloads\VIDEO-FLOTA.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de videos.
-    </video>
-  </div>
-</div>
-
-<div class="separator-banner">🌸 Bienvenido a Astroflor 🌸</div>
-
-<!-- FOOTER FINAL AJUSTADO -->
-<footer style="background: linear-gradient(135deg, #6fe979a6, #25ce1f10, #73ff0023); color: white; padding: 50px 5%; display: flex; flex-direction: column; gap: 30px;">
-
-  <!-- Botón central de la tienda online -->
-  <div style="text-align: center;">
-    <a href="https://tu-tienda-online.com" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: #09caec; color: white; border-radius: 6px; text-decoration: none; font-size: 16px; font-weight: bold;">Ir a la tienda online</a>
-  </div>
-
-  <!-- Sección formulario y mapa a los márgenessss -->
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
-
-    <!-- Formulario a la izquierda -->
-    <div style="flex-shrink: 0; width: 280px; text-align: center;">
-      <h2 style="color: #333; margin-bottom: 15px; font-size: 16px;">Suscríbete a nuestras novedades</h2>
-      <form action="#" method="post" style="display: flex; flex-direction: column; gap: 8px;">
-        <input type="email" name="email" placeholder="Tu correo electrónico" required style="padding: 8px; font-size: 14px; border-radius: 6px; border: 1px solid #ccc; width: 100%;">
-        <button type="submit" style="padding: 8px; font-size: 14px; border-radius: 6px; border: none; background: #f53b3b; color: white; cursor: pointer; transition: background 0.3s;">Suscribirme</button>
-      </form>
+  <header>
+    <div class="logo">
+      <img src="https://www.astroflor.com/wp-content/uploads/2023/07/LOGO-ASTROFLOR.png" alt="Astroflor Logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Tienda</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Mapa a la derecha -->
-    <div style="flex-shrink: 0; width: 280px; text-align: center;">
-      <h3 style="margin-bottom: 15px; font-size: 16px;">Nuestra ubicación</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.123456789!2d-3.703790684608283!3d40.41677507936382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229b2e0abcdef%3A0x1234567890abcdef!2sMadrid%2C%20España!5e0!3m2!1ses!2ses!4v1693084800000!5m2!1ses!2ses" 
-        width="100%" 
-        height="200" 
-        style="border:0; border-radius: 12px;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+  <!-- Icono de accesibilidad flotante -->
+  <div class="accessibility-widget">
+    <button class="accessibility-btn" aria-label="Herramientas de accesibilidad">
+      <!-- Icono de accesibilidad personalizado -->
+      <img src="https://images.icon-icons.com/91/PNG/512/accessibility_16440.png" alt="Accesibilidad" style="width:48px; height:48px;">
+    </button>
+    <div class="accessibility-tools">
+      <ul>
+        <li><button type="button">Aumentar texto</button></li>
+        <li><button type="button">Reducir texto</button></li>
+        <li><button type="button">Alto contraste</button></li>
+        <li><button type="button">Fuente legible</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Astroflor</h1>
+      <p id="typed-text">Más de 25 años importando flores con la mejor calidad.</p>
+      <a href="shop.html" class="btn">Visita nuestra Tienda</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Nuestros Valores</h2>
+    <p>Nos dedicamos a traer la belleza de las flores del mundo a tu negocio, garantizando frescura, calidad y servicio excepcional.</p>
+  </section>
+
+  <div class="contenedor-valoracion-info">
+    <section class="valoracion">
+      <h2>Déjanos tu valoración</h2>
+      <form id="valoracion-form">
+        <label for="rating">¿Qué te ha parecido nuestra página?</label>
+        <div class="estrellas">
+          <input type="radio" id="estrella5" name="rating" value="5"><label for="estrella5">&#9733;</label>
+          <input type="radio" id="estrella4" name="rating" value="4"><label for="estrella4">&#9733;</label>
+          <input type="radio" id="estrella3" name="rating" value="3"><label for="estrella3">&#9733;</label>
+          <input type="radio" id="estrella2" name="rating" value="2"><label for="estrella2">&#9733;</label>
+          <input type="radio" id="estrella1" name="rating" value="1"><label for="estrella1">&#9733;</label>
+        </div>
+        <button type="submit" class="btn">Enviar valoración</button>
+      </form>
+      <div id="media-valoraciones">
+        <strong>Media global:</strong> <span id="media">0.0</span> <span id="media-estrellas"></span> (<span id="total-votos">0</span> valoraciones)
+      </div>
+    </section>
+
+    <aside class="info-empresa">
+      <h3>Información de contacto</h3>
+      <p>
+        <span class="icono-contacto">
+          <!-- Icono de teléfono SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+          </svg>
+        </span>
+        <strong>Teléfono:</strong> <a href="tel:+34913864681">+34 913 864 681</a>
+      </p>
+      <p>
+        <span class="icono-contacto">
+          <!-- Icono de sobre/correo SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.29 6.36a1 1 0 001.42 0L20 10.01V20H4z"/>
+          </svg>
+        </span>
+        <strong>Correo:</strong> <a href="mailto:astroflor@astroflor.com">astroflor@astroflor.com</a>
+      </p>
+    </aside>
+
+    <div class="mapa-empresa">
+      <h3>Ubicación</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Gta.+Prta+de+Hierro,+Moncloa+-+Aravaca,+28040+Madrid&output=embed"
+        width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-
   </div>
 
-  <!--aaaaa Sección final con foto y texto aaaaaa-->
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
-    <div style="flex-shrink: 0; text-align: center;">
-      <img src="C:\Users\alvar\Downloads\LOGO.png" alt="Foto pequeña" style="width: 200px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.3);">
-      <p style="margin-top: 10px; font-size: 14px;">Nuestro equipo cuidando cada flor</p>
-    </div>
-    <div style="flex-grow: 1; text-align: left; max-width: 500px; line-height: 1.5; font-size: 14px;">
-      <p>En <strong>Astroflor</strong> cada detalle cuenta. Desde la selección hasta la entrega, nos aseguramos de que cada flor llegue fresca y perfecta, porque sabemos que cada cliente merece lo mejor.</p>
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Astroflor - Todos los derechos reservados</p>
+  </footer>
+  <script>
+    // Accesibilidad (ya existente)
+    let fontSize = 100;
+    const root = document.documentElement;
 
-  <p style="text-align: center; margin-top: 10px; font-size: 12px;">© 2025 Astroflor. Todos los derechos reservados.</p>
+    document.querySelectorAll('.accessibility-tools button')[0].onclick = function() {
+      if (fontSize < 150) fontSize += 10;
+      root.style.fontSize = fontSize + '%';
+    };
 
-</footer>
+    document.querySelectorAll('.accessibility-tools button')[1].onclick = function() {
+      if (fontSize > 70) fontSize -= 10;
+      root.style.fontSize = fontSize + '%';
+    };
 
+    let contrasteActivo = false;
+    document.querySelectorAll('.accessibility-tools button')[2].onclick = function() {
+      contrasteActivo = !contrasteActivo;
+      if (contrasteActivo) {
+        document.body.style.background = "#000";
+        document.body.style.color = "#fff";
+        document.querySelectorAll('section, article, .card, header, footer').forEach(el => {
+          el.style.background = "#000";
+          el.style.color = "#fff";
+        });
+        document.querySelectorAll('.btn, .accessibility-tools button').forEach(el => {
+          el.style.background = "#fff";
+          el.style.color = "#000";
+        });
+      } else {
+        document.body.style.background = "";
+        document.body.style.color = "";
+        document.querySelectorAll('section, article, .card, header, footer').forEach(el => {
+          el.style.background = "";
+          el.style.color = "";
+        });
+        document.querySelectorAll('.btn, .accessibility-tools button').forEach(el => {
+          el.style.background = "";
+          el.style.color = "";
+        });
+      }
+    };
 
+    let fuenteLegible = false;
+    document.querySelectorAll('.accessibility-tools button')[3].onclick = function() {
+      fuenteLegible = !fuenteLegible;
+      if (fuenteLegible) {
+        document.body.style.fontFamily = "Arial, Helvetica, sans-serif";
+      } else {
+        document.body.style.fontFamily = "'Montserrat', sans-serif";
+      }
+    };
+
+    // Barrido elegante tipo "fade" para frases
+    const frases = [
+      "Más de 25 años importando flores con la mejor calidad.",
+      "Flores con detalles.",
+      "Flores con frescura."
+    ];
+    let fraseActual = 0;
+    const typedText = document.getElementById('typed-text');
+
+    function mostrarFraseFade() {
+      // Desvanece el texto
+      typedText.style.opacity = 0;
+      setTimeout(() => {
+        // Cambia la frase
+        typedText.textContent = frases[fraseActual];
+        // Aparece suavemente
+        typedText.style.opacity = 1;
+        // Próxima frase
+        fraseActual = (fraseActual + 1) % frases.length;
+        setTimeout(mostrarFraseFade, 2500);
+      }, 500);
+    }
+
+    // Estilo inicial para el fade
+    typedText.style.transition = "opacity 0.5s";
+    setTimeout(mostrarFraseFade, 2500);
+
+    // Valoraciones
+    const form = document.getElementById('valoracion-form');
+    const mediaSpan = document.getElementById('media');
+    const mediaEstrellas = document.getElementById('media-estrellas');
+    const totalVotos = document.getElementById('total-votos');
+
+    // Guardar y recuperar valoraciones en localStorage
+    function getValoraciones() {
+      return JSON.parse(localStorage.getItem('valoracionesAstroflor') || '[]');
+    }
+    function setValoraciones(arr) {
+      localStorage.setItem('valoracionesAstroflor', JSON.stringify(arr));
+    }
+
+    function actualizarMedia() {
+      const valoraciones = getValoraciones();
+      const total = valoraciones.length;
+      let media = 0;
+      if (total > 0) {
+        media = valoraciones.reduce((a, b) => a + b, 0) / total;
+      }
+      mediaSpan.textContent = media.toFixed(1);
+      totalVotos.textContent = total;
+      // Mostrar estrellas medias
+      let estrellas = '';
+      for (let i = 1; i <= 5; i++) {
+        estrellas += i <= Math.round(media) ? '★' : '☆';
+      }
+      mediaEstrellas.textContent = estrellas;
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const rating = form.rating.value;
+      if (!rating) return;
+      const valoraciones = getValoraciones();
+      valoraciones.push(Number(rating));
+      setValoraciones(valoraciones);
+      actualizarMedia();
+      form.reset();
+      alert('¡Gracias por tu valoración!');
+    });
+
+    actualizarMedia();
+  </script>
 </body>
 </html>
