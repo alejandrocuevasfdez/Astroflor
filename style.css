@@ -347,3 +347,166 @@ footer {
   border-radius: 10px;
   margin-top: 0;
 }
+
+/* haz Section */
+.sobre-nosotros-section {
+  max-width: 800px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-nosotros-section h2 {
+  font-family: 'Italiana', serif;
+  font-size: 2.5rem;
+  color: #111; /* Negro */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sobre-nosotros-section h3 {
+  font-family: 'Italiana', sans-serif;
+  font-size: 1.5rem;
+  color: #111; /* Negro */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sobre-nosotros-section p,
+.sobre-nosotros-section .about-intro {
+  font-size: 1.18rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.lista-proveedores.paises {
+  margin: 1.2rem 0 1.5rem 0;
+  padding-left: 0;
+  font-size: 1.18rem;
+  color: #111;
+  font-family: 'Italiana', serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  list-style: none;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.lista-proveedores.paises li {
+  text-transform: uppercase;
+  font-size: 1.18rem;
+  letter-spacing: 1.5px;
+  font-family: 'Italiana', serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+  display: block;
+  text-align: center;
+}
+
+.lista-proveedores.destacados {
+  margin: 1.2rem 0 1.5rem 0;
+  padding-left: 0;
+  font-size: 1.13rem;
+  color: var(--color-primario, #0064AF);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  list-style: disc inside;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lista-proveedores.destacados li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+body.about-page {
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url('https://www.florclick.com/entradas_blog/calendario-de-flores-5f6bdc06188c5.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.instalaciones-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+  width: 100%;
+}
+
+.instalaciones-galeria img {
+  width: 90%;
+  max-width: 600px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  background: #fff;
+  transition: transform 0.2s;
+  display: block;
+  cursor: zoom-in;
+}
+
+/* Estilos para el overlay y la imagen ampliada */
+.img-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  cursor: zoom-out;
+  animation: fadeIn 0.2s;
+}
+.img-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  background: #fff;
+  animation: zoomIn 0.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes zoomIn {
+  from { transform: scale(0.8);}
+  to   { transform: scale(1);}
+}
+
+@media (max-width: 900px) {
+  .sobre-nosotros-section {
+    padding: 1.2rem 0.7rem;
+  }
+  .sobre-nosotros-section h2 {
+    font-size: 2rem;
+  }
+  .sobre-nosotros-section h3 {
+    font-size: 1.2rem;
+  }
+  .lista-proveedores.paises {
+    height: auto;
+  }
+}
