@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedor Nº1 de Flor Cortada</title> 
+    <!-- Holaaaaaa -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1505483531331-5d2f14240763?auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        /* Contenedor principal centrado con flex */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Imágenes a los lados */
+        .hero img {
+            width: 700px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #fff;
+            transition: transform 0.3s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+            border-color: #ffd700;
+        }
+
+        /* Texto central */
+        .hero-text {
+            font-size: 2em;
+            font-weight: bold;
+            max-width: 400px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 800px) {
+            .hero {
+                flex-direction: column;
+                gap: 20px;
+                height: auto;
+                padding: 50px 20px;
+            }
+
+            .hero-text {
+                font-size: 1.5em;
+            }
+
+            .hero img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <img src="C:\Users\alvar\Downloads\WhatsApp Image 2025-08-24 at 20.08.50.jpeg" alt="Flor izquierda">
+        <div class="hero-text">mabeeeeeeel</div>
+        <img src="C:\Users\alvar\Downloads\WhatsApp Image 2025-08-24 at 20.08.50.jpeg" alt="Flor derecha">
+    </div>
+
+</body>
+</html>
