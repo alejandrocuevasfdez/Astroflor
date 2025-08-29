@@ -10,7 +10,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="https://www.astroflor.com/wp-content/uploads/2023/07/LOGO-ASTROFLOR.png" alt="Astroflor Logo">
+      <a href="index.html">
+        <img src="https://www.astroflor.com/wp-content/uploads/2023/07/LOGO-ASTROFLOR.png" alt="Astroflor Logo">
+      </a>
     </div>
     <nav>
       <ul>
@@ -47,8 +49,77 @@
     </div>
   </section>
 
+  <!-- Widget de accesibilidad -->
+  <div class="accessibility-widget">
+    <button class="accessibility-btn" aria-label="Herramientas de accesibilidad">
+      <img src="https://images.icon-icons.com/91/PNG/512/accessibility_16440.png" alt="Accesibilidad" style="width:48px; height:48px;">
+    </button>
+    <div class="accessibility-tools">
+      <ul>
+        <li><button type="button">Aumentar texto</button></li>
+        <li><button type="button">Reducir texto</button></li>
+        <li><button type="button">Alto contraste</button></li>
+        <li><button type="button">Fuente legible</button></li>
+      </ul>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Astroflor - Todos los derechos reservados</p>
   </footer>
+   <div class="banner-kit-digital">
+    <img src="https://www.astroflor.com/wp-content/uploads/2022/03/banner-kit-digital-1400-opt.png" alt="Kit Digital Astroflor">
+  </div>
+
+  <script>
+  let fontSize = 100;
+  const root = document.documentElement;
+
+  document.querySelectorAll('.accessibility-tools button')[0].onclick = function() {
+    if (fontSize < 150) fontSize += 10;
+    root.style.fontSize = fontSize + '%';
+  };
+  document.querySelectorAll('.accessibility-tools button')[1].onclick = function() {
+    if (fontSize > 70) fontSize -= 10;
+    root.style.fontSize = fontSize + '%';
+  };
+  let contrasteActivo = false;
+  document.querySelectorAll('.accessibility-tools button')[2].onclick = function() {
+    contrasteActivo = !contrasteActivo;
+    if (contrasteActivo) {
+      document.body.style.background = "#000";
+      document.body.style.color = "#fff";
+      document.querySelectorAll('section, article, .card, header, footer').forEach(el => {
+        el.style.background = "#000";
+        el.style.color = "#fff";
+      });
+      document.querySelectorAll('.btn, .accessibility-tools button').forEach(el => {
+        el.style.background = "#fff";
+        el.style.color = "#000";
+      });
+    } else {
+      document.body.style.background = "";
+      document.body.style.color = "";
+      document.querySelectorAll('section, article, .card, header, footer').forEach(el => {
+        el.style.background = "";
+        el.style.color = "";
+      });
+      document.querySelectorAll('.btn, .accessibility-tools button').forEach(el => {
+        el.style.background = "";
+        el.style.color = "";
+      });
+    }
+  };
+
+  let fuenteLegible = false;
+  document.querySelectorAll('.accessibility-tools button')[3].onclick = function() {
+    fuenteLegible = !fuenteLegible;
+    if (fuenteLegible) {
+      document.body.style.fontFamily = "Arial, Helvetica, sans-serif";
+    } else {
+      document.body.style.fontFamily = "'Montserrat', sans-serif";
+    }
+  };
+  </script>
 </body>
 </html>

@@ -11,7 +11,9 @@
 <body class="about-page">
   <header>
     <div class="logo">
-      <img src="https://www.astroflor.com/wp-content/uploads/2023/07/LOGO-ASTROFLOR.png" alt="Astroflor Logo">
+      <a href="index.html">
+        <img src="https://www.astroflor.com/wp-content/uploads/2023/07/LOGO-ASTROFLOR.png" alt="Astroflor Logo">
+      </a>
     </div>
     <nav>
       <ul>
@@ -54,10 +56,12 @@
     <section class="valoracion">
       <h2>Déjanos tu valoración</h2>
       <form id="valoracion-form">
-        <label for="rating">¿Qué te ha parecido nuestra página?</label>
-        <textarea id="comentario-valoracion" name="comentario" rows="2" placeholder="Escribe tu comentario aquí..." style="width:90%;margin:12px 0;border-radius:8px;padding:8px;border:1px solid #ccc;font-size:0.95rem;"></textarea>
+        <label for="nombre-valoracion">¿Cómo te llamas?</label>
+        <input id="nombre-valoracion" name="nombre" type="text" placeholder="Tu nombre" required style="width:90%;margin:12px 0;border-radius:8px;padding:8px;border:1px solid #ccc;font-size:0.95rem;">
+        <label for="comentario-valoracion">¿Qué te ha parecido nuestra página?</label>
+        <textarea id="comentario-valoracion" name="comentario" rows="2" placeholder="Escribe tu comentario aquí..." required style="width:90%;margin:12px 0;border-radius:8px;padding:8px;border:1px solid #ccc;font-size:0.95rem;"></textarea>
         <div class="estrellas">
-          <input type="radio" id="estrella5" name="rating" value="5"><label for="estrella5">&#9733;</label>
+          <input type="radio" id="estrella5" name="rating" value="5" required><label for="estrella5">&#9733;</label>
           <input type="radio" id="estrella4" name="rating" value="4"><label for="estrella4">&#9733;</label>
           <input type="radio" id="estrella3" name="rating" value="3"><label for="estrella3">&#9733;</label>
           <input type="radio" id="estrella2" name="rating" value="2"><label for="estrella2">&#9733;</label>
@@ -72,22 +76,32 @@
 
     <aside class="info-empresa">
       <h3>Información de contacto</h3>
-      <p>
-        <span class="icono-contacto">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;">
-            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
-          </svg>
-        </span>
-        <strong>Teléfono:</strong> <a href="tel:+34913864681">+34 913 864 681</a>
-      </p>
-      <p>
-        <span class="icono-contacto">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;">
-            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.29 6.36a1 1 0 001.42 0L20 10.01V20H4z"/>
-          </svg>
-        </span>
-        <strong>Correo:</strong> <a href="mailto:astroflor@astroflor.com">astroflor@astroflor.com</a>
-      </p>
+      <div style="margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <span class="icono-contacto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+            </svg>
+          </span>
+          <strong>Teléfono:</strong>
+        </div>
+        <div style="margin-top: 0.5rem;">
+          <a href="tel:+34913864681">+34 913 864 681</a>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <span class="icono-contacto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#0064AF" viewBox="0 0 24 24">
+              <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l7.29 6.36a1 1 0 001.42 0L20 10.01V20H4z"/>
+            </svg>
+          </span>
+          <strong>Correo:</strong>
+        </div>
+        <div style="margin-top: 0.5rem;">
+          <a href="mailto:astroflor@astroflor.com">astroflor@astroflor.com</a>
+        </div>
+      </div>
     </aside>
 
     <div class="mapa-empresa">
@@ -157,6 +171,9 @@
   <footer>
     <p>&copy; 2025 Astroflor - Todos los derechos reservados</p>
   </footer>
+   <div class="banner-kit-digital">
+    <img src="https://www.astroflor.com/wp-content/uploads/2022/03/banner-kit-digital-1400-opt.png" alt="Kit Digital Astroflor">
+  </div>
 
   <!-- Icono flotante para abrir el chatbot -->
   <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir chat">
@@ -252,11 +269,12 @@
     typedText.style.transition = "opacity 0.5s";
     setTimeout(mostrarFraseFade, 2500);
 
-    // Valoraciones
+    // Valoraciones y testimonios
     const form = document.getElementById('valoracion-form');
     const mediaSpan = document.getElementById('media');
     const mediaEstrellas = document.getElementById('media-estrellas');
     const totalVotos = document.getElementById('total-votos');
+    const testimoniosLista = document.querySelector('.testimonios-lista');
 
     function getValoraciones() {
       return JSON.parse(localStorage.getItem('valoracionesAstroflor') || '[]');
@@ -270,7 +288,11 @@
       const total = valoraciones.length;
       let media = 0;
       if (total > 0) {
-        media = valoraciones.reduce((a, b) => a + b, 0) / total;
+        media = valoraciones.reduce((a, b) => {
+          if (typeof b === 'object' && b.rating) return a + Number(b.rating);
+          if (typeof b === 'number') return a + b;
+          return a;
+        }, 0) / total;
       }
       mediaSpan.textContent = media.toFixed(1);
       totalVotos.textContent = total;
@@ -281,19 +303,47 @@
       mediaEstrellas.textContent = estrellas;
     }
 
+    function pintarTestimonios() {
+      const valoraciones = getValoraciones();
+      testimoniosLista.innerHTML = '';
+      valoraciones.slice(-3).reverse().forEach(val => {
+        const div = document.createElement('div');
+        div.className = 'testimonio';
+        div.innerHTML = `
+          <img src="https://randomuser.me/api/portraits/${val.genero || 'men'}/${val.avatar || Math.floor(Math.random()*90)}.jpg" alt="${val.nombre}">
+          <p>"${val.comentario}"</p>
+          <span>- ${val.nombre}</span>
+          <div class="estrellas-testimonio">
+            ${'<i class="fa fa-star"></i>'.repeat(Math.floor(val.rating))}${val.rating%1>=0.5?'<i class="fa fa-star-half-o"></i>':''}
+          </div>
+        `;
+        testimoniosLista.appendChild(div);
+      });
+    }
+
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const rating = form.rating.value;
-      if (!rating) return;
+      const nombre = form.nombre.value.trim() || 'Anónimo';
+      const comentario = form.comentario.value.trim();
+      const rating = Number(form.rating.value);
+      if (!nombre || !comentario || !rating) return;
+
+      // Avatar aleatorio
+      const genero = Math.random() > 0.5 ? 'men' : 'women';
+      const avatar = Math.floor(Math.random() * 90);
+
       const valoraciones = getValoraciones();
-      valoraciones.push(Number(rating));
+      valoraciones.push({ nombre, comentario, rating, genero, avatar });
       setValoraciones(valoraciones);
       actualizarMedia();
+      pintarTestimonios();
       form.reset();
       alert('¡Gracias por tu valoración!');
     });
 
+    // Inicializar
     actualizarMedia();
+    pintarTestimonios();
 
     // Banner principal se desvanece al bajar y aparece al subir
     let lastScroll = window.scrollY;

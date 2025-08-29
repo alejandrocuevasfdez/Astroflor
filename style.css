@@ -320,11 +320,11 @@ footer {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.07);
   padding: 2rem 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.18rem;
   flex: 1 1 500px;
   min-width: 300px;
   max-width: 500px;
-  min-height: 375px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,20 +342,19 @@ footer {
 }
 
 .info-empresa p {
-  font-size: 1.3rem;        /* Más grande */
+  font-size: 1.8rem;        /* Más grande */
   margin-bottom: 1.2rem;
   text-align: center;
 }
 
-.info-empresa a {
-  color: var(--color-primario);
-  text-decoration: none;
-  word-break: break-all;
-  font-size: 1.3rem;        /* Más grande */
+.info-empresa strong {
+  font-size: 1.85rem;
 }
 
-.info-empresa a:hover {
-  text-decoration: underline;
+.info-empresa a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .mapa-empresa {
@@ -365,7 +364,7 @@ footer {
   padding: 2rem 1.5rem;
   min-width: 300px;
   max-width: 500px;
-  min-height: 375px;
+  min-height: 500px;
   height: 340px; /* Igual que los otros recuadros */
   display: flex;
   flex-direction: column;
@@ -867,18 +866,19 @@ body.about-page {
 }
 
 .checkbox-group {
-  display: grid;
+  display: flex;
   align-items: center;
-  gap: 0.6rem;
-  margin: 0.5rem 0 0.5rem 0;
+  gap: 10px;
+  margin-bottom: 0em;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin: 0;
 }
 
 .checkbox-label {
-  font-size: 0.98rem;
-  color: #444;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
   cursor: pointer;
-  user-select: none;
 }
 
 .resumen-privacidad {
